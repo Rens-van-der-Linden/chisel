@@ -83,7 +83,7 @@ func chiselKey2PrivateKey(chiselKey []byte) (*ecdsa.PrivateKey, error) {
 	return x509.ParseECPrivateKey(decodedPrivateKey)
 }
 
-func ChiselKey2PEM(chiselKey []byte) ([]byte, error) {
+func BeitelKey2PEM(chiselKey []byte) ([]byte, error) {
 	privateKey, err := chiselKey2PrivateKey(chiselKey)
 	if err == nil {
 		return privateKey2PEM(privateKey)
@@ -92,6 +92,6 @@ func ChiselKey2PEM(chiselKey []byte) ([]byte, error) {
 	return nil, err
 }
 
-func IsChiselKey(chiselKey []byte) bool {
+func IsBeitelKey(chiselKey []byte) bool {
 	return strings.HasPrefix(string(chiselKey), ChiselKeyPrefix)
 }

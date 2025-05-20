@@ -186,7 +186,7 @@ func certGetCertificate(c *certConfig) (*x509.Certificate, []byte, []byte, error
 		SerialNumber: serialNumber,
 		Subject: pkix.Name{
 			OrganizationalUnit: []string{"test"},
-			Organization:       []string{"Chisel"},
+			Organization:       []string{"Beitel"},
 			Country:            []string{"us"},
 			Province:           []string{"ma"},
 			Locality:           []string{"Boston"},

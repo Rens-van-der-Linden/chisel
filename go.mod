@@ -1,4 +1,4 @@
-module github.com/jpillora/chisel
+module github.com/jpillora/beitel
 
 go 1.21
 
